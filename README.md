@@ -9,10 +9,10 @@
 
 The aim of this repository is:
 
-- to release data sets on fees paid for Open Access journal articles and monographs by Universities and Research Society Funds under an Open Database License
-- to demonstrate how reporting on fee-based Open Access publishing can be made more transparent and reproducible across institutions.
+- to release data sets on costs incurred by academic institutions for Open Access publishing, including fees for journal articles, monographs, and publications covered by Open Access publishing agreements, under an Open Database License
+- to demonstrate how reporting on Open Access publishing can be made more transparent and reproducible across institutions.
 
-At the moment this project provides the following cost data:
+At the moment OpenAPC provides the following publication-based cost data:
 
 | Publication Type | Count           | Aggregated Sum (€)      | Contributing Institutions              |
 |------------------|-----------------|-------------------------|----------------------------------------|
@@ -35,7 +35,7 @@ Our latest data release can always be accessed via the following DOI:
 
 ## Additional Costs
 
-In 2024 OpenAPC started to aggregate additional costs like page charges or submission fees, which may occur in the context of OA publishing aside from APCs. These cost types are considered optional and thus collected in a separate data file, they are linked to a main publication entry using the DOI as primary key. At the moment additional costs are only collected for journal articles (both for the APC and TA data set).
+In 2024 OpenAPC started to aggregate additional costs like page charges or submission fees, which may occur in the context of OA publishing alongside primary publication fees. These cost types are considered optional and thus collected in a separate data file, they are linked to the corresponding main publication entry in the APC or TA file using the DOI as primary key. At the moment additional costs are only collected for journal articles (both for the APC and TA data set).
 
 | Dataset         | Main CSV File                                                                 | Additional Costs File                                                                                    | 
 |-----------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -43,7 +43,7 @@ In 2024 OpenAPC started to aggregate additional costs like page charges or submi
 
 ## How to contribute?
 
-Any academic institution or research funder paying for Article Process Charges (APCs) or Book Processing Charges (BPCs) can contribute to OpenAPC, no formal registration is required.
+Any academic institution or research funder covering costs for Open Access publications (e.g.  Article Process Charges [APCs] or Book Processing Charges [BPCs] can contribute to OpenAPC, no formal registration is required.
 This [page](https://github.com/OpenAPC/openapc-de/wiki/Data-Submission-Handout) ([German version](https://github.com/OpenAPC/openapc-de/wiki/Handreichung-Dateneingabe)) explains the details.
 
 Please note that OpenAPC uses internal identifiers for institutions in all its data sets to maintain backwards compatibility. Additional metadata on all participants (including ROR IDs as persistent identifier) is maintained in a separate [lookup table](https://github.com/OpenAPC/openapc-de/blob/master/data/institutions.csv).
@@ -998,13 +998,15 @@ The following institutions have contributed to OpenAPC so far:
 
 
 
-The article data set contains information on 246,360 open access journal articles being published in fully and hybrid open access journal. Publication fees for these articles were supported financially by 481 research performing institutions and research funders. 
+The APC data set contains information on 246,360 Open Access journal articles for which publication fees were paid on an article basis. These articles were published in fully Open Access and hybrid journals, and the corresponding fees were supported financially by 481 research-performing institutions and research funders.
 
 In total, article publication fee spending covered by the OpenAPC initiative amounted to € 502,369,681. The average payment was € 2,039 and the median was € 1,887.
 
 180,345 articles in the data set were published in fully open access journals. Total spending on publication fees for these articles amounts to € 332,598,719, including value-added tax; the average payment was € 1,844 (median =  € 1,717, SD = € 892).
 
 Hybrid open access journals rely on both publication fees and subscriptions as revenue source. 66,015 articles in the data set were published in hybrid journals. Total expenditure amounts to 169,770,962 €; the average fee was € 2,572 (median =  € 2,512, SD = € 1,147).
+
+Articles published under OA publishing agreements, including cases where APCs are paid on an article basis within such agreements, are not included in the APC data set but are recorded in the TA data set.
 
 #### Spending distribution over fully and hybrid open access journals
 
@@ -1042,11 +1044,10 @@ Hybrid open access journals rely on both publication fees and subscriptions as r
 
 
 
-#### Additional Costs for articles
+#### Additional Costs for articles (APC data set)
 
 
-
-In addition to APCs, additional costs have been reported for 568 articles, totalling € 329,201. The following table shows an overview of the different cost types:
+In addition to APCs, additional costs have been reported for 568 articles in the APC data set, totalling € 329,201. The following table shows an overview of the different cost types:
 
 
 
