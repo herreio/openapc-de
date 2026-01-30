@@ -619,6 +619,18 @@ JOURNAL_OWNER_CHANGED = {
 	"1751-8563": ["Thomas Telford Ltd.", "Emerald"], # Proceedings of the ICE - Geotechnical Engineering (electronic)
 	"1502-3850": ["Informa UK Limited", "MJS Publishing, Medical Journals Sweden AB"], # Acta Odontologica Scandinavica 
 	"0001-6357": ["Informa UK Limited", "MJS Publishing, Medical Journals Sweden AB"], # Acta Odontologica Scandinavica (print)
+	"0308-0188": ["Informa UK Limited", "SAGE Publications"], # Interdisciplinary Science Reviews 
+	"1743-2790": ["Informa UK Limited", "SAGE Publications"], # Interdisciplinary Science Reviews (electronic)
+	"1757-9708": ["Royal Society of Chemistry (RSC)", "Oxford University Press (OUP)"], # Integrative Biology 
+	"1757-9694": ["Royal Society of Chemistry (RSC)", "Oxford University Press (OUP)"], # Integrative Biology (linking)
+	"1574-0153": ["IOS Press", "SAGE Publications"], # Cancer Biomarkers 
+	"1875-8592": ["IOS Press", "SAGE Publications"], # Cancer Biomarkers (electronic)
+	"1875-8592": ["IOS Press", "SAGE Publications"], # Cancer Biomarkers 
+	"1574-0153": ["IOS Press", "SAGE Publications"], # Cancer Biomarkers (print)
+	"1756-8919": ["Future Science, LTD", "Informa UK Limited"], # Future Medicinal Chemistry 
+	"1756-8927": ["Future Science, LTD", "Informa UK Limited"], # Future Medicinal Chemistry (electronic)
+	"2299-0054": ["Termedia Sp. z.o.o.", "Medycyna Praktyczna"], # Videosurgery and Other Miniinvasive Techniques 
+	"1895-4588": ["Termedia Sp. z.o.o.", "Medycyna Praktyczna"], # Videosurgery and Other Miniinvasive Techniques (linking)
 
 }
 
@@ -1087,6 +1099,16 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "1502-3850", # Acta Odontologica Scandinavica, Gold OA since 2024
     "1574-6976", # FEMS Microbiology Reviews, Gold OA since 2024
     "2575-0356", # ENERGY & ENVIRONMENTAL MATERIALS, Gold OA since 2023
+    "2524-7867", # Biochar, Gold OA since 2022
+    "0950-0839", # Philosophical Magazine Letters, Gold OA since 2023
+    "2049-632X", # Pathogens and Disease, Gold OA since 2024
+    "1460-2237", # Health Policy and Planning, Gold OA since 2024
+    "2050-1242", # Network Science, Gold OA since 2024
+    "0021-1214", # Irish Historical Studies, Gold OA since 2025
+    "1875-8592", # Cancer Biomarkers, Gold OA since 2024
+    "0886-0440", # Journal of Cardiac Surgery, Gold OA since 2023
+    "1574-0196", # European Constitutional Law Review, Gold OA since 2025
+    "2057-0198", # Business and Human Rights Journal, Gold OA since 9.2024
 ]
 
 # A whitelist to identify titles which a shared by multiple journals. The list
