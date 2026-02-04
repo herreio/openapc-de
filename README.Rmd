@@ -26,8 +26,19 @@ require(ggplot2)
 
 ```{r, echo=FALSE, cache = FALSE}
 my_apc <- readr::read_csv("data/apc_de.csv")
+my_ta <- readr::read_csv("data/transformative_agreements/transformative_agreements.csv")
 my_bpc <- readr::read_csv("data/bpc.csv")
 my_apc_ac <- readr::read_csv("data/additional_costs.csv")
+my_contracts <- readr::read_csv("data/transformative_agreements/contracts.csv")
+
+apc_ta_joined <- bind_rows(my_apc, my_ta)
+apc_ta_articles <- apc_ta_joined %>% filter(!is.na(euro))
+
+unique_contracts <- my_contracts %>%
+  filter(!is.na(euro)) %>%
+  group_by(institution, contract_name) %>%
+  summarize(euro = sum(euro))
+
 ```
 
 ## About
@@ -37,12 +48,13 @@ The aim of this repository is:
 - to release data sets on costs incurred by academic institutions for Open Access publishing, including fees for journal articles, monographs, and publications covered by Open Access publishing agreements, under an Open Database License
 - to demonstrate how reporting on Open Access publishing can be made more transparent and reproducible across institutions.
 
-At the moment OpenAPC provides the following publication-based cost data:
+At the moment OpenAPC provides the following cost data:
 
-| Publication Type | Count           | Aggregated Sum (€)      | Contributing Institutions              |
-|------------------|-----------------|-------------------------|----------------------------------------|
-| Articles         |`r nrow(my_apc)` | `r sum(my_apc$euro)`    | `r length(unique(my_apc$institution))` |
-| Monographs       |`r nrow(my_bpc)` | `r sum(my_bpc$euro)`    | `r length(unique(my_bpc$institution))` |
+| Entity                      | Count                                     | Aggregated Sum (€)               | Contributing Institutions                                         |
+|-----------------------------|-------------------------------------------|----------------------------------|-------------------------------------------------------------------|
+| Articles (APCs)             |`r nrow(apc_ta_articles)`                  | `r sum(apc_ta_articles$euro)`    | `r length(unique(apc_ta_articles$institution))`                   |
+| Monographs (BPCs)           |`r nrow(my_bpc)`                           | `r sum(my_bpc$euro)`             | `r length(unique(my_bpc$institution))`                            |
+| OA Agreements/Contracts     |`r nrow(unique_contracts)`                 | `r sum(unique_contracts$euro)`   | `r length(unique(unique_contracts$institution))`                  |
 
 ## How to access the data?
 
@@ -50,9 +62,10 @@ There are several options. You may simply download the the raw data sets in CSV 
 
 | Dataset         | CSV File                                                                                                                                                                                                                         | OLAP Cubes                                                                                                                                            | Treemaps                                                                                                                                 |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| articles        | [APC file](https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv), [data schema](https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set)                                                                 | [APC cube](https://olap.openapc.net/cube/openapc/aggregate)                                                                                           | [APC treemap](https://treemaps.openapc.net/apcdata/openapc/)                                                                             |
+| Articles        | [APC file](https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv), [data schema](https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set)                                                                 | [APC cube](https://olap.openapc.net/cube/openapc/aggregate)                                                                                           | [APC treemap](https://treemaps.openapc.net/apcdata/openapc/)                                                                             |
 | TA articles     | [TA file](https://github.com/OpenAPC/openapc-de/blob/master/data/transformative_agreements/transformative_agreements.csv), [data schema](https://github.com/OpenAPC/openapc-de/wiki/schema#transformative-agreements-data-set)   | [TA cube (Euro)](https://olap.openapc.net/cube/ta_euro/aggregate), [TA cube (Count)](https://olap.openapc.net/cube/ta_count/aggregate)                | [TA treemap (Euro)](https://treemaps.openapc.net/apcdata/ta-euro/), [TA treemap (Count)](https://treemaps.openapc.net/apcdata/ta-count/) |
-| monographs      | [BPC file](https://github.com/OpenAPC/openapc-de/blob/master/data/bpc.csv), [data schema](https://github.com/OpenAPC/openapc-de/wiki/schema#bpc-data-set)                                                                        | [BPC cube](https://olap.openapc.net/cube/bpc/aggregate)                                                                                               | [BPC treemap](https://treemaps.openapc.net/apcdata/bpc/)                                                                                 |
+| Monographs      | [BPC file](https://github.com/OpenAPC/openapc-de/blob/master/data/bpc.csv), [data schema](https://github.com/OpenAPC/openapc-de/wiki/schema#bpc-data-set)                                                                        | [BPC cube](https://olap.openapc.net/cube/bpc/aggregate)                                                                                               | [BPC treemap](https://treemaps.openapc.net/apcdata/bpc/)                                                                                 |
+| Contracts       | [Contracts file](https://github.com/OpenAPC/openapc-de/blob/master/data/transformative_agreements/contracts.csv), data-schema                                                                                                    |                                                                                                                                                       |                                                                                                                                          |
 
 Our latest data release can always be accessed via the following DOI:
 
