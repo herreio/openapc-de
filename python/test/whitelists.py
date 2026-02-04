@@ -1103,6 +1103,7 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "0841-8209", # Canadian Journal of Law & Jurisprudence, Gold OA since 2025
     "1502-3850", # Acta Odontologica Scandinavica, Gold OA since 2024
     "1574-6976", # FEMS Microbiology Reviews, Gold OA since 2024
+    "2575-0356", # ENERGY & ENVIRONMENTAL MATERIALS, Gold OA since 2023
     "2524-7867", # Biochar, Gold OA since 2022
     "0950-0839", # Philosophical Magazine Letters, Gold OA since 2023
     "2049-632X", # Pathogens and Disease, Gold OA since 2024

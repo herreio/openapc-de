@@ -730,6 +730,7 @@ COLUMN_NAMES = {
     "euro": ["apc", "kosten", "cost", "euro", "eur"],
     "period": ["period", "jahr"],
     "is_hybrid": ["is_hybrid", "is hybrid", "hybrid"],
+    "opt_out": ["opt_out", "opt-out"],
     "publisher": ["publisher", "PublisherName"],
     "journal_full_title": ["journal_full_title", "journal", "journal title", "journal full title", "journaltitle", "journal_title"],
     "issn": ["issn", "issn.1", "issn0"],
@@ -743,6 +744,8 @@ COLUMN_NAMES = {
     "ut": ["ut"],
     "url": ["url"],
     "doaj": ["doaj"],
+    "agreement": ["agreement", "contract_primary_identifier"],
+    "group_id": ["group_id", "contract_group_id"],
     "book_title": ["book_title"],
     "backlist_oa": ["backlist_oa"],
     "isbn": ["isbn"],
@@ -802,6 +805,17 @@ AGREEMENT_PUBLISHER_MAP = {
 	"American Dairy Science Association": "Elsevier BV",
 	"American Educational Research Association (AERA)": "SAGE Publications",
 	"The Electrochemical Society": "IOP Publishing",
+}
+
+# Maps ESAC Registry Country Names to ISO 3166-1 alpha-3
+ESAC_COUNTRY_MAPPINGS = {
+    "Germany": "DEU",
+    "Austria": "AUT",
+}
+
+# Maps ESAC Registry Publisher Names to OpenAPC variants
+ESAC_PUBLISHER_MAPPINGS = {
+    "Taylor & Francis": "Informa UK Limited",
 }
 
 # maps ROR geo names to terms used in the institutions table
