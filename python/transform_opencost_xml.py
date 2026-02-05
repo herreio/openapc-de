@@ -382,7 +382,7 @@ for article in articles:
         continue # Skip articles silently which have already been omitted by the oc toolkit (usually cost splitting cases)
     esac_id = article["contract_primary_identifier"]
     pub_type = article["type"]
-    target_file = institution.lower().replace(" ", "_")
+    target_file = institution.lower().replace(" ", "_").replace("/", "_")
     period = article["period"]
     publication_level_costs = False
     try:
@@ -419,7 +419,7 @@ for article in articles:
 
 for invoice_group in invoice_groups:
     institution = invoice_group["institution"]
-    target_file = institution.lower().replace(" ", "_") + "_contracts"
+    target_file = institution.lower().replace(" ", "_").replace("/", "_") + "_contracts"
     esac_id = invoice_group["contract_id"]
     # Preferred way is to get consortium/contract name from contracts.csv
     consortium = "NA"
