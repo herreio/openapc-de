@@ -1116,6 +1116,12 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "2057-0198", # Business and Human Rights Journal, Gold OA since 9.2024
 ]
 
+# A whitelist to identify contract group_ids where similar cost amounts
+# have been confirmed to be legitimate. These group_ids are excluded from tests. 
+CONFIRMED_SIMILAR_CONTRACTS_AMOUNTS = [
+    #"031vc2293_wiley2019deal_2023", Example record - remove when adding the first case.
+]
+
 # A whitelist to identify titles which a shared by multiple journals. The list
 # contains the involved linking ISSNs which are excluded from tests.
 AMBIGUOUS_JOURNAL_TITLES = {

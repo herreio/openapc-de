@@ -177,7 +177,8 @@ for data_file, metadata in DATA_FILES.items():
         for row in reader:
             for field in metadata["unused_fields"]:
                 del(row[field])
-            metadata["target_file"].append(RowObject(metadata["file_path"], line, row, data_file))
+            row_object = RowObject(metadata["file_path"], line, row, data_file)
+            metadata["target_file"].append(row_object)
             if metadata["has_doi"] and oat.has_value(row["doi"]):
                 if metadata["is_ac_file_for"] is None:
                     global_doi_list.add(row["doi"])
@@ -234,9 +235,9 @@ for data_file, metadata in DATA_FILES.items():
                 if oat.has_value(row["group_id"]):
                     group_id = row["group_id"]
                     if group_id not in group_id_dict:
-                        group_id_dict[group_id] = [row]
+                        group_id_dict[group_id] = [row_object]
                     else:
-                        group_id_dict[group_id].append(row)
+                        group_id_dict[group_id].append(row_object)
                 if oat.has_value("identifier"):
                     identifier = row["identifier"]
                     if identifier not in identifier_dict:
@@ -530,12 +531,31 @@ def check_contract_consistency(row_object):
     msg = (line_str + 'Two contract entries share a common {} ({}), but the ' +
            '{} differs ("{}" vs "{}")')
     group_id = row["group_id"]
+    amount = float(row["euro"]) if oat.has_value(row["euro"]) else None
+    cost_type = row["cost_type"]
     same_group_id_rows = group_id_dict[group_id]
-    for other_row in same_group_id_rows:
+    for other_row_object in same_group_id_rows:
+        if other_row_object.line_number == row_object.line_number:
+            continue
+        other_row = other_row_object.row
         for field in ["institution", "contract_name", "identifier", "consortium"]:
             if row[field] != other_row[field]:
                 msg = msg.format("group_id", group_id, field, row[field], other_row[field])
                 fail(msg)
+        if amount is not None and amount != 0 and group_id not in wl.CONFIRMED_SIMILAR_CONTRACTS_AMOUNTS:
+            other_amount = float(other_row["euro"]) if oat.has_value(other_row["euro"]) else None
+            if other_amount is not None and other_amount != 0:
+                if amount * other_amount < 0:
+                    continue
+                lower, higher = sorted([abs(amount), abs(other_amount)])
+                diff = (higher - lower) / higher
+                if diff < 0.01:
+                    msg = line_str
+                    msg += ('Two contract entries share a common group_id ({}) and ' +
+                            'the cost amount is almost equal (difference less than ' +
+                            '1%), this might be a case of double reporting ({}€ vs. {}€).')
+                    msg = msg.format(group_id, amount, other_amount)
+                    fail(msg)
     identifier = row["identifier"]
     if oat.has_value(identifier):
         same_identifier_rows = identifier_dict[identifier]
