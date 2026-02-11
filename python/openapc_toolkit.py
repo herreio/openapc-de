@@ -2310,7 +2310,7 @@ def process_row(row, row_num, column_map, num_required_columns, additional_isbn_
         req = csv_column.requirement
         if column_type == "euro" and index is not None:
             current_row["euro"] = _process_euro_value(row[index], round_monetary, row_num, index, ta_mode, False)
-        elif req["articles"] == CSVColumn.ADDITIONAL_COSTS or req["ta"] == CSVColumn.ADDITIONAL_COSTS and index is not None:
+        elif (req["articles"] == CSVColumn.ADDITIONAL_COSTS or req["ta"] == CSVColumn.ADDITIONAL_COSTS) and index is not None:
             current_row[column_type] = _process_euro_value(row[index], round_monetary, row_num, index, None, True)
         elif column_type == "period" and index is not None:
             current_row["period"] = _process_period_value(row[index], row_num)
