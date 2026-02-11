@@ -664,6 +664,14 @@ def check_ta_data(row_object):
             msg = 'publisher mismatch found for group_id "{}": {} <> {} [{}]'
             ret = line_str + msg.format(group_id, publisher, group_id_publisher_dict[group_id], doi)
             fail(ret)
+        contract_rows = group_id_dict[group_id]
+        for row_object in contract_rows:
+            contract_name = row_object.row["contract_name"]
+            identifier = row_object.row["identifier"]
+            if identifier != agreement and contract_name != agreement:
+                msg = 'agreement name "{}" for group_id {} does not match values in linked contract record (contract_name: "{}"; identifier: "{}")'
+                ret = line_str + msg.format(agreement, group_id, contract_name, identifier)
+                fail(ret)
 
 @pytest.mark.parametrize("row_object", APC_DATA)
 class TestAPCRows(object):
