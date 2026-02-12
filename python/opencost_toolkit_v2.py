@@ -21,6 +21,8 @@ except ImportError:
     etree = None
     print("WARNING: 3rd party module 'lxml' not found - optional openCost schema validation will not work")
 
+DEAL_IDENTIFIERS = ["wiley2024deal", "wiley2019deal", "sn2024deal", "sn2020deal", "els2023deal"]
+
 EXCHANGE_RATES = {}
 
 OPENCOST_EXTRACTION_FIELDS = OrderedDict([
@@ -574,11 +576,18 @@ def _process_oc_publication_cost_data(cost_data_element, namespaces):
     final_data["opt-out"] = "FALSE"
     esac_id = final_data.get("contract_primary_identifier", "")
     if esac_id:
-        if "publication charge" in final_data and not "hybrid-oa" in final_data:
-            if final_data["publication charge"] == 0.0:
+        if not "hybrid-oa" in final_data and not "gold-oa" in final_data:
+            if "publication charge" in final_data and final_data["publication charge"] == 0.0:
                 final_data["opt-out"] = "TRUE"
                 final_data["is_hybrid"] = "TRUE"
-                final_data["euro"] = "0.0"
+                final_data["euro"] = "NA"
+                final_data["publication charge"] = "NA"
+            # DEAL workaround: OAPK institutions erroneously using "other" to mark opt-out articles
+            elif esac_id in DEAL_IDENTIFIERS and "other" in final_data and final_data["other"] == 0.0:
+                final_data["opt-out"] = "TRUE"
+                final_data["is_hybrid"] = "TRUE"
+                final_data["euro"] = "NA"
+                final_data["other"] = "NA"
     if "date_paid" in final_data:
         final_data["period"] =  final_data["date_paid"]
     elif "date_invoice" in final_data:

@@ -1445,8 +1445,8 @@ def find_book_dois_in_crossref(isbn_list):
                 if item["type"] in ["monograph", "book", "edited-book"] and item["DOI"] not in ret_value["dois"]:
                     ret_value["dois"].append(item["DOI"])
             if len(ret_value["dois"]) == 0:
-                msg = "No monograph/book DOI type found in  Crossref ISBN search result ({})!"
-                raise ValueError(msg.format(url))
+                msg = "No monograph/book DOI type found in  Crossref ISBN search result ({})"
+                raise ValueError(msg.format(route))
             else:
                 ret_value["success"] = True
     except HTTPError as httpe:
@@ -2156,7 +2156,8 @@ def _process_agreement_value(agreement, row_num):
     if identifier_dict is not None: # agreement is an esac id
         ret["identifier"] = agreement
         ret["contract_name"] = identifier_dict["contract_name"][0]
-        ret["consortium"] = identifier_dict["consortium"][0]
+        if len(identifier_dict["consortium"]) > 0:
+            ret["consortium"] = identifier_dict["consortium"][0]
         msg = "Line %s: agreement '%s' found as identifier in contracts.csv"
         logging.info(msg, row_num, agreement)
         return ret
@@ -2167,9 +2168,11 @@ def _process_agreement_value(agreement, row_num):
             msg = "Line %s: agreement '%s' found as contract_name in contracts.csv, but the identifier is not unique (%s)"
             logging.error(msg, row_num, agreement, ", ".join(identifiers))
             return ret
-        ret["identifier"] = contract_name_dict["identifier"][0]
+        if len(contract_name_dict["identifier"]) > 0:
+            ret["identifier"] = contract_name_dict["identifier"][0]
         ret["contract_name"] = agreement
-        ret["consortium"] = contract_name_dict["consortium"][0]
+        if len(contract_name_dict["consortium"]) > 0:
+            ret["consortium"] = contract_name_dict["consortium"][0]
         msg = "Line %s: agreement '%s' found as contract_name in contracts.csv (identifier: %s)"
         logging.info(msg, row_num, agreement, ret["identifier"])
         return ret
