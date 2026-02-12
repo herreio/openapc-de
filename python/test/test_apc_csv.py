@@ -160,6 +160,7 @@ issn_p_dict = {}
 issn_e_dict = {}
 issn_l_dict = {}
 group_id_dict = {}
+contract_name_dict = {}
 identifier_dict = {} # ESAC Ids
 
 title_dict = {}
@@ -241,9 +242,15 @@ for data_file, metadata in DATA_FILES.items():
                 if oat.has_value("identifier"):
                     identifier = row["identifier"]
                     if identifier not in identifier_dict:
-                        identifier_dict[identifier] = [row]
+                        identifier_dict[identifier] = [row_object]
                     else:
-                        identifier_dict[identifier].append(row)
+                        identifier_dict[identifier].append(row_object)
+                if oat.has_value("contract_name"):
+                    contract_name = row["contract_name"]
+                    if contract_name not in contract_name_dict:
+                        contract_name_dict[contract_name] = [row_object]
+                    else:
+                        contract_name_dict[contract_name].append(row_object)
             line += 1
 
 for _, file_dict in KNOWN_DUPLICATES.items():
@@ -531,6 +538,8 @@ def check_contract_consistency(row_object):
     msg = (line_str + 'Two contract entries share a common {} ({}), but the ' +
            '{} differs ("{}" vs "{}")')
     group_id = row["group_id"]
+    identifier = row["identifier"]
+    contract_name = row["contract_name"]
     amount = float(row["euro"]) if oat.has_value(row["euro"]) else None
     cost_type = row["cost_type"]
     same_group_id_rows = group_id_dict[group_id]
@@ -556,10 +565,16 @@ def check_contract_consistency(row_object):
                             '1%), this might be a case of double reporting ({}€ vs. {}€).')
                     msg = msg.format(group_id, amount, other_amount)
                     fail(msg)
-    identifier = row["identifier"]
+    same_contract_name_rows = contract_name_dict[contract_name]
+    for other_row_object in same_contract_name_rows:
+        other_row = other_row_object.row
+        if identifier != other_row["identifier"]:
+            msg = msg.format("contract_name", contract_name, "identifier", identifier, other_row["identifier"])
+            fail(msg)
     if oat.has_value(identifier):
         same_identifier_rows = identifier_dict[identifier]
-        for other_row in same_identifier_rows:
+        for other_row_object in same_identifier_rows:
+            other_row = other_row_object.row
             for field in ["contract_name", "consortium"]:
                 if row[field] != other_row[field]:
                     msg = msg.format("identifier", identifier, field, row[field], other_row[field])
