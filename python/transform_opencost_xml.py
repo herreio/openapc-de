@@ -131,6 +131,10 @@ for article in articles:
         target_file += "_BPC"
     elif oat.has_value(esac_id):
         target_file += "_TA"
+        if article["is_hybrid"] == 'NA':
+            msg = 'Skipped a record (linked to a contract) which had no valid cost type combination. Cost type must be either "hybrid-oa", "gold-oa" or "publication charge" (with a value of 0) ({})'
+            logging.warning(msg.format(article["doi"]))
+            continue
     else: #APC
         if pub_type != "journal article":
             msg = 'Skipped a record (not linked to a contract) which was no journal article ({}, {}, {}€, {}, {}, {}, {}))'

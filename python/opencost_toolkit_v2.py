@@ -21,6 +21,8 @@ except ImportError:
     etree = None
     print("WARNING: 3rd party module 'lxml' not found - optional openCost schema validation will not work")
 
+DEAL_IDENTIFIERS = ["wiley2024deal", "wiley2019deal", "sn2024deal", "sn2020deal", "els2023deal"]
+
 EXCHANGE_RATES = {}
 
 OPENCOST_EXTRACTION_FIELDS = OrderedDict([
@@ -576,6 +578,12 @@ def _process_oc_publication_cost_data(cost_data_element, namespaces):
     if esac_id:
         if "publication charge" in final_data and not "hybrid-oa" in final_data:
             if final_data["publication charge"] == 0.0:
+                final_data["opt-out"] = "TRUE"
+                final_data["is_hybrid"] = "TRUE"
+                final_data["euro"] = "0.0"
+        # DEAL workaround: OAPK institutions erroneously using "other" to mark opt-out articles
+        elif esac_id in DEAL_IDENTIFIERS and "other" in final_data and not "hybrid-oa" in final_data:
+            if final_data["other"] == 0.0:
                 final_data["opt-out"] = "TRUE"
                 final_data["is_hybrid"] = "TRUE"
                 final_data["euro"] = "0.0"
