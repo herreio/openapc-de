@@ -16,154 +16,229 @@ Academic institutions and research funders globally are invited to contribute da
 
 ## Overview
 
-This dataset contains information on 181,798 articles, published at 557 institutions under 140 different transformative agreements. The data can also be inspected as a [treemap visualisation](https://treemaps.openapc.net/apcdata/transformative-agreements/).
+This dataset contains information on 181,798 articles, published at 557 institutions under 215 different transformative agreements. The data can also be inspected as a [treemap visualisation](https://treemaps.openapc.net/apcdata/ta-euro/).
 
 ### Breakdown by agreement
 
 
 
-|Agreement                                        | Articles|
-|:------------------------------------------------|--------:|
-|Springer Compact                                 |    35725|
-|DEAL Springer Nature Germany                     |    31018|
-|DEAL Wiley Germany                               |    20759|
-|Swiss Consortium Elsevier agreement              |    12988|
-|CRKN SAGE Agreement                              |     8308|
-|FinELib Elsevier agreement                       |     6879|
-|French EDP Sciences agreement                    |     5753|
-|Swiss Consortium Springer Compact agreement      |     4992|
-|Swiss Consortium Wiley agreement                 |     4405|
-|FinELib Wiley agreement                          |     3848|
-|FinELib Springer Compact agreement               |     3562|
-|IReL Wiley Agreement                             |     3042|
-|CSIC-Elsevier                                    |     2924|
-|FinELib Taylor & Francis agreement               |     2246|
-|IReL Springer Agreement                          |     1851|
-|Swiss Consortium T&F agreement                   |     1698|
-|IReL T&F Agreement                               |     1626|
-|Crui-CARE Springer Agreement                     |     1534|
-|Austrian Consortium Wiley agreement              |     1343|
-|CSIC-Wiley                                       |     1307|
-|FinELib SAGE agreement                           |     1295|
-|FinELib IEEE agreement                           |     1257|
-|Swiss Consortium SAGE agreement                  |     1157|
-|Crui-CARE Elsevier Agreement                     |     1056|
-|IReL Sage Agreement                              |      993|
-|Crui-CARE Wiley Agreement                        |      898|
-|IReL IEEE Agreement                              |      841|
-|FinELib OUP agreement                            |      757|
-|Swiss Consortium CUP agreement                   |      709|
-|IReL OUP Agreement                               |      674|
-|Austrian Consortium T&F agreement                |      659|
-|Swiss Consortium OUP Journals Agreement          |      642|
-|Swiss Consortium RSC agreement                   |      640|
-|CSIC-Springer Nature                             |      636|
-|IReL CUP Agreement                               |      622|
-|FinELib Emerald agreement                        |      575|
-|FinELib ACS agreement                            |      565|
-|FWF Transformative Agreement Springer Nature     |      556|
-|IReL ACS Agreement                               |      553|
-|CSIC-Royal Society of Chemistry                  |      551|
-|Swiss Consortium IOP agreement                   |      550|
-|CSIC-ACS                                         |      512|
-|FWF Transformative Agreement Elsevier            |      498|
-|FWF Transformative Agreement ACS                 |      444|
-|IReL PLOS Agreement                              |      406|
-|CSIC-Oxford University Press                     |      403|
-|FinELib RSC agreement                            |      365|
-|Swiss Consortium Ovid LWW agreement              |      338|
-|Swiss Consortium ACS agreement                   |      318|
-|Swiss Consortium AIP agreement                   |      287|
-|IReL Emerald Agreement                           |      259|
-|MPG RSC agreement                                |      246|
-|IReL RSC Agreement                               |      244|
-|CzechELib Wiley agreement                        |      231|
-|Swiss Consortium Karger agreement                |      223|
-|Austrian Consortium IOP agreement                |      217|
-|FinELib Wolters Kluwer Lippincott agreement      |      213|
-|Crui-CARE ACS Agreement                          |      207|
-|CzechELib Springer Nature agreement              |      200|
-|QNL Elsevier Agreement                           |      194|
-|Austrian Consortium RSC agreement                |      179|
-|Crui-CARE CUP Agreement                          |      174|
-|CSIC-Taylor & Francis                            |      164|
-|Swiss Consortium Nature Transformative agreement |      164|
-|Crui-CARE IEEE Agreement                         |      151|
-|IReL IOP Agreement                               |      141|
-|Swiss Consortium IEEE agreement                  |      131|
-|IReL RIA Agreement                               |      125|
-|TIB RSC Journals R&P - TU Berlin                 |      114|
-|QNL Springer Nature Agreement                    |      103|
-|Crui-CARE De Gruyter Agreement                   |      100|
-|IReL AIP Agreement                               |       99|
-|QNL Wiley Agreement                              |       92|
-|CSIC-Cambridge University Press                  |       89|
-|FinELib CUP agreement                            |       86|
-|CzechELib Taylor & Francis agreement             |       85|
-|QNL T&F Agreement                                |       85|
-|Crui-CARE RSC Agreement                          |       82|
-|EISZ agreement Springer Nature                   |       79|
-|IReL RS Agreement                                |       79|
-|CzechELib OUP agreement                          |       73|
-|IReL BMJ Agreement                               |       72|
-|IReL Optica Agreement                            |       70|
-|IReL Microbiology Society Agreement              |       68|
-|CSIC-Institute of Physics                        |       66|
-|FinELib ACM agreement                            |       66|
-|EISZ agreement Elsevier                          |       64|
-|IReL ACM Agreement                               |       64|
-|CzechELib ACS agreement                          |       58|
-|Crui-CARE Lippincott Agreement                   |       57|
-|FWF Transformative Agreement RSC                 |       55|
-|EISZ agreement Akadémiai Kiadó                   |       54|
-|CSIC-Royal Society                               |       53|
-|CzechELib RSC agreement                          |       50|
-|CSIC-AIP                                         |       46|
-|MPG Taylor & Francis agreement                   |       46|
-|Crui-CARE Emerald Agreement                      |       45|
-|CzechELib CUP agreement                          |       43|
-|EISZ agreement Wiley                             |       35|
-|FinELib Nature Research agreement                |       33|
-|Crui-CARE IOP Agreement                          |       32|
-|MPG IOP agreement                                |       32|
-|IReL APA Agreement                               |       30|
-|QNL IEEE Agreement                               |       30|
-|Crui-CARE AIP Agreement                          |       29|
-|IReL AmericanPhysicalSociety Agreement           |       28|
-|IReL Cell Press Agreement                        |       26|
-|IReL ECS Agreement                               |       24|
-|Austrian Consortium Emerald agreement            |       23|
-|CSIC-Brill                                       |       23|
-|CzechELib Karger agreement                       |       23|
-|CSIC-SAGE                                        |       19|
-|CzechELib IOP agreement                          |       19|
-|University of Milan - OUP                        |       19|
-|CzechELib SAGE agreement                         |       18|
-|CSIC-Company of biologists                       |       17|
-|CSIC-Microbiology Society                        |       17|
-|FWF Transformative Agreement Sage                |       17|
-|Austrian Consortium Sage agreement               |       16|
-|CSIC-De Gruyter                                  |       16|
-|CzechELib AIP agreement                          |       16|
-|FWF Transformative Agreement IEEE                |       16|
-|CSIC-Portland Press                              |       12|
-|Swiss Consortium BMJ agreement                   |       10|
-|Swiss Consortium ACM agreement                   |        9|
-|IReL Company of Biologists Agreement             |        7|
-|IReL CSHL Agreement                              |        4|
-|CzechELib ACM agreement                          |        3|
-|IReL ASME Agreement                              |        3|
-|QNL De Gruyter Agreement                         |        3|
-|QNL OVID Agreement                               |        3|
-|University of Milan - BMJ                        |        3|
-|CSIC-Bentham                                     |        2|
-|CSIC-Rockefeller University Press                |        2|
-|EISZ agreement Cambridge University Press        |        2|
-|University of Milan - ACM                        |        2|
-|Crui-CARE ACM Agreement                          |        1|
-|EISZ agreement DeGruyter                         |        1|
-|EISZ agreement Lippincott Williams and Wilkins   |        1|
-|IReL RUP Agreement                               |        1|
+|Agreement                                                 | Articles|
+|:---------------------------------------------------------|--------:|
+|Springer Nature (DEAL) 2020-2023                          |    30095|
+|Wiley (DEAL) 2019-2023                                    |    20433|
+|Springer Compact                                          |    13332|
+|Elsevier (CSAL) 2020-2023                                 |    10742|
+|Sage (CRKN) 2021-2023                                     |     5811|
+|Elsevier (FinELib) 2021-2023                              |     4784|
+|Wiley (CSAL) 2021-2024                                    |     4405|
+|Springer Compact (VSNU) 2015-2016                         |     4013|
+|Springer Compact (Jisc) 2019-2022                         |     3876|
+|Springer Compact (Bibsam) 2019-2021                       |     3730|
+|Springer Compact (CSAL) 2020-2022                         |     3583|
+|Springer Compact (Bibsam) 2016-2018                       |     3382|
+|Springer Compact (KEMOE/FWF) 2016-2018                    |     3339|
+|EDP Sciences (Couperin) 2017-2021                         |     3330|
+|Elsevier (CRUE-CSIC Alliance) 2021-2024                   |     2924|
+|Springer Compact (FinELib) 2021-2023                      |     2656|
+|Sage (CRKN) 2024-2026                                     |     2497|
+|EDP Sciences (Couperin) 2022-2026                         |     2423|
+|Wiley (IReL) 2021-2024                                    |     2332|
+|Elsevier (CSAL) 2024-2028                                 |     2246|
+|Wiley (FinELib) 2023-2024                                 |     2208|
+|Springer Compact (VSNU) 2018-2023                         |     2042|
+|Elsevier (FinELib) 2024-2025                              |     1922|
+|Wiley (FinELib) 2020-2022                                 |     1640|
+|Springer Nature (CRUI-CARE) 2020-2024                     |     1534|
+|Springer Nature (IReL) 2021-2024                          |     1425|
+|Springer Nature (CSAL) 2023-2025                          |     1409|
+|Springer Compact (Bibsam) 2022-2024                       |     1388|
+|Taylor & Francis (FinELib) 2023-2024                      |     1205|
+|Taylor & Francis (CSAL) 2021-2023                         |     1148|
+|Wiley (CRUE-CSIC Alliance) 2022-2024                      |     1109|
+|Elsevier (CRUI-CARE) 2023-2027                            |     1056|
+|Taylor & Francis (FinELib) 2020-2022                      |     1041|
+|Taylor & Francis (IReL) 2021-2023                         |     1006|
+|IEEE (FinELib) 2021-2023                                  |      933|
+|Wiley (KEMOE/FWF) 2018-2020                               |      928|
+|Springer Nature (DEAL) 2024-2028                          |      923|
+|Springer Nature (FinELib) 2024-2025                       |      906|
+|Wiley (CRUI-CARE) 2020-2023                               |      780|
+|Wiley (IReL) 2025-2028                                    |      710|
+|Sage (FinELib) 2023-2024                                  |      707|
+|Sage (CSAL) 2023-2025                                     |      649|
+|Oxford University Press (CSAL) 2023-2024                  |      642|
+|Springer Nature (CRUE-CSIC Alliance) 2021-2024            |      636|
+|Cambridge University Press (IReL) 2021-2025               |      622|
+|Springer Compact (MPDL) 2015-2018                         |      622|
+|Taylor & Francis (IReL) 2024-2026                         |      620|
+|Sage (FinELib) 2020-2022                                  |      588|
+|American Chemical Society (FinELib) 2021-2023             |      565|
+|Sage (IReL) 2021-2023                                     |      562|
+|Oxford University Press (FinELib) 2021-2023               |      559|
+|American Chemical Society (IReL) 2021-2025                |      553|
+|IOP Publishing (CSAL) 2022-2024                           |      550|
+|Taylor & Francis (CSAL) 2024-2027                         |      550|
+|Cambridge University Press (CSAL) 2021-2023               |      530|
+|American Chemical Society (CRUE-CSIC Alliance) 2021-2024  |      512|
+|Sage (CSAL) 2021-2022                                     |      508|
+|Elsevier (KEMOE/FWF) 2021-2023                            |      498|
+|American Chemical Society (KEMOE) 2020-2022               |      444|
+|Taylor & Francis (KEMOE/FWF) 2017-2019                    |      439|
+|Emerald (FinELib) 2021-2023                               |      435|
+|IEEE (IReL) 2024-2026                                     |      432|
+|Sage (IReL) 2024-2026                                     |      431|
+|Springer Nature (IReL) 2025-2027                          |      426|
+|Wiley (KEMOE/FWF) 2021-2023                               |      415|
+|IEEE (IReL) 2021-2023                                     |      409|
+|IReL PLOS Agreement                                       |      406|
+|Oxford University Press (CSIC) 2020-2024                  |      403|
+|Oxford University Press (IReL) 2021-2023                  |      395|
+|Springer Compact (KEMOE/FWF) 2019-2021                    |      372|
+|Royal Society of Chemistry (CSAL) 2021-2023               |      364|
+|Wolters Kluwer Health (CSAL) 2022-2024                    |      338|
+|Wiley (DEAL) 2024-2028                                    |      326|
+|IEEE (FinELib) 2024-2025                                  |      324|
+|American Chemical Society (CSAL) 2023-2025                |      318|
+|AIP Publishing (CSAL) 2022-2024                           |      287|
+|Oxford University Press (IReL) 2024-2026                  |      279|
+|Royal Society of Chemistry (MPDL) 2017-2018               |      246|
+|Wiley (CzechELib) 2023-2026                               |      231|
+|Taylor & Francis (KEMOE) 2020-2023                        |      217|
+|American Chemical Society (CRUI-CARE) 2020-2023           |      207|
+|Royal Society of Chemistry (CSIC) 2021-2022               |      201|
+|Royal Society of Chemistry (CSIC) 2019-2020               |      200|
+|Springer Nature (CzechELib) 2023-2025                     |      200|
+|Oxford University Press (FinELib) 2024-2025               |      198|
+|Wiley (CRUE-CSIC Alliance) 2021-2021                      |      198|
+|Elsevier (QNL) 2020-2022                                  |      194|
+|Springer Nature (KEMOE/FWF) 2022-2023                     |      185|
+|Cambridge University Press (CSAL) 2024-2026               |      179|
+|Elsevier (FinELib) 2022-2024                              |      173|
+|Royal Society of Chemistry (FinELib) 2022-2023            |      171|
+|Royal Society of Chemistry (IReL) 2022-2024               |      165|
+|Emerald (IReL) 2021-2023                                  |      164|
+|Nature (CSAL) 2023-2025                                   |      164|
+|IEEE (CRUI-CARE) 2022-2024                                |      151|
+|Royal Society of Chemistry (CSIC) 2023-2025               |      150|
+|Royal Society of Chemistry (CSAL) 2024-2026               |      143|
+|FinELib Emerald agreement                                 |      140|
+|Royal Society of Chemistry (FinELib) 2024-2025            |      134|
+|Royal Society of Chemistry (CSAL) 2019-2020               |      133|
+|Swiss Consortium IEEE agreement                           |      131|
+|Royal Society of Chemistry (KEMOE) 2017-2018              |      127|
+|IOP Publishing (KEMOE/FWF) 2020-2022                      |      126|
+|Karger (CSAL) 2020-2022                                   |      118|
+|Wiley (CRUI-CARE) 2024-2027                               |      118|
+|Taylor & Francis (CSIC) 2021-2023                         |      109|
+|Karger (CSAL) 2023-2025                                   |      105|
+|IOP Publishing (IReL) 2021-2024                           |      103|
+|QNL Springer Nature Agreement                             |      103|
+|Emerald (IReL) 2024-2026                                  |       95|
+|QNL Wiley Agreement                                       |       92|
+|Cambridge University Press (CRUI-CARE) 2023-2025          |       91|
+|IOP Publishing (KEMOE/FWF) 2017-2019                      |       91|
+|Walter de Gruyter (CRUI-CARE) 2020-2022                   |       91|
+|Cambridge University Press (FinELib) 2024-2025            |       86|
+|Wolters Kluwer Health (FinELib) 2024-2026                 |       86|
+|Taylor & Francis (CzechELib) 2023-2025                    |       85|
+|Cambridge University Press (CRUI-CARE) 2020-2022          |       83|
+|Royal Society of Chemistry (CRUI-CARE) 2022-2024          |       82|
+|FinELib Wolters Kluwer Lippincott agreement               |       81|
+|Royal Society of Chemistry (IReL) 2025-2028               |       79|
+|Springer Nature (EISZ) 2020-2022                          |       79|
+|IReL RIA Agreement                                        |       76|
+|Oxford University Press (CzechELib) 2023-2025             |       73|
+|Association for Computing Machinery (FinELib) 2022-2024   |       66|
+|IOP Publishing (CSIC) 2023-2025                           |       66|
+|Elsevier (EISZ) 2022-2022                                 |       64|
+|Royal Society of Chemistry (FinELib) 2020-2021            |       60|
+|American Chemical Society (CzechELib) 2023-2025           |       58|
+|Royal Society of Chemistry (TIB) 2021-2023                |       58|
+|Wolters Kluwer Health (CRUI-CARE) 2021-2024               |       57|
+|Royal Society of Chemistry (TIB) 2018-2020                |       56|
+|Royal Society of Chemistry (KEMOE/FWF) 2021-2024          |       55|
+|Taylor & Francis (CSIC) 2024-2026                         |       55|
+|Akadémiai Kiadó (EISZ) 2021-2023                          |       54|
+|Austrian Consortium RSC agreement                         |       52|
+|The Royal Society (IReL) 2021-2023                        |       52|
+|Association for Computing Machinery (IReL) 2023-2025      |       51|
+|AIP Publishing (IReL) 2020-2022                           |       50|
+|Royal Society of Chemistry (CzechELib) 2023-2025          |       50|
+|AIP Publishing (IReL) 2023-2025                           |       49|
+|Optica Publishing Group (IReL) 2022-2024                  |       49|
+|QNL T&F Agreement                                         |       48|
+|AIP Publishing (CSIC) 2022-2024                           |       46|
+|Taylor & Francis (MPDL) 2017-2019                         |       46|
+|Wolters Kluwer Health (FinELib) 2022-2024                 |       46|
+|Cambridge University Press (CSIC) 2020-2022               |       45|
+|Emerald (CRUI-CARE) 2020-2024                             |       45|
+|Cambridge University Press (CSIC) 2023-2025               |       44|
+|Cambridge University Press (CzechELib) 2023-2025          |       43|
+|IOP Publishing (IReL) 2025-2027                           |       38|
+|Taylor & Francis (QNL) 2019-2020                          |       37|
+|BMJ Publishing (IReL) 2021-2023                           |       36|
+|BMJ Publishing (IReL) 2024-2026                           |       36|
+|Microbiology Society (IReL) 2024-2026                     |       36|
+|Wiley (EISZ) 2022-2022                                    |       35|
+|Springer Nature (FinELib) 2022-2024                       |       33|
+|IOP Publishing (CRUI-CARE) 2023-2025                      |       32|
+|IOP Publishing (MPDL) 2018-2020                           |       32|
+|Microbiology Society (IReL) 2021-2023                     |       32|
+|American Psychological Association (IReL) 2022-2024       |       30|
+|QNL IEEE Agreement                                        |       30|
+|AIP Publishing (CRUI-CARE) 2023-2026                      |       29|
+|American Physical Society (IReL) 2025-2027                |       28|
+|Royal Irish Academy (IReL) 2021-2023                      |       28|
+|The Royal Society (IReL) 2024-2026                        |       27|
+|Elsevier (IReL) 2024-2026                                 |       26|
+|Brill (CSIC) 2023-2024                                    |       23|
+|Emerald (KEMOE) 2017-2019                                 |       23|
+|Karger (CzechELib) 2023-2027                              |       23|
+|The Royal Society (CSIC) 2024-2024                        |       22|
+|Optica Publishing Group (IReL) 2025-2027                  |       21|
+|Royal Irish Academy (IReL) 2024-2026                      |       21|
+|IOP Publishing (CzechELib) 2023-2025                      |       19|
+|Sage (CSIC) 2024-2025                                     |       19|
+|The Royal Society (CSIC) 2023-2023                        |       19|
+|University of Milan - OUP                                 |       19|
+|CzechELib SAGE agreement                                  |       18|
+|Sage (KEMOE) 2019-2022                                    |       17|
+|AIP Publishing (CzechELib) 2023-2025                      |       16|
+|IEEE (KEMOE/FWF) 2021-2024                                |       16|
+|Sage (KEMOE) 2016-2018                                    |       16|
+|Walter de Gruyter (CSIC) 2023-2025                        |       16|
+|Association for Computing Machinery (IReL) 2020-2022      |       13|
+|Microbiology Society (CSIC) 2021-2023                     |       13|
+|The Royal Society (CSIC) 2022-2022                        |       12|
+|The Company of Biologists (CSIC) 2021-2023                |       11|
+|BMJ Publishing (CSAL) 2024-2024                           |       10|
+|Association for Computing Machinery (CSAL) 2022-2025      |        9|
+|Walter de Gruyter (CRUI-CARE) 2023-2025                   |        9|
+|IReL ECS Agreement                                        |        8|
+|Portland Press (CSIC) 2023-2024                           |        8|
+|The Company of Biologists (CSIC) 2024-2026                |        6|
+|The Electrochemical Society (IReL) 2022-2022              |        6|
+|The Electrochemical Society (IReL) 2023-2023              |        6|
+|The Company of Biologists (IReL) 2023-2025                |        5|
+|Microbiology Society (CSIC) 2024-2024                     |        4|
+|Portland Press (CSIC) 2021-2022                           |        4|
+|The Electrochemical Society (IReL) 2021-2021              |        4|
+|American Society of Mechanical Engineers (IReL) 2025-2027 |        3|
+|Association for Computing Machinery (CRUI-CARE) 2022-2025 |        3|
+|Association for Computing Machinery (CzechELib) 2023-2025 |        3|
+|BMJ Publishing (CRUI-CARE) 2023-2024                      |        3|
+|IReL CSHL Agreement                                       |        3|
+|QNL De Gruyter Agreement                                  |        3|
+|QNL OVID Agreement                                        |        3|
+|Taylor & Francis (KEMOE/FWF) 2014-2016                    |        3|
+|Bentham Science Publishers (CSIC) 2024-2026               |        2|
+|Cambridge University Press (EISZ) 2022-2022               |        2|
+|Rockefeller University Press (CSIC) 2023-2024             |        2|
+|The Company of Biologists (IReL) 2020-2022                |        2|
+|Cold Spring Harbor Laboratory Press (IReL) 2021-2021      |        1|
+|Rockefeller University Press (IReL) 2022-2024             |        1|
+|Walter de Gruyter (EISZ) 2022-2022                        |        1|
+|Wolters Kluwer Health (EISZ) 2022-2022                    |        1|
 
 
 
