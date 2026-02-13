@@ -60,6 +60,8 @@ for line in source_content:
     start_time = datetime.datetime.strptime(start, ESAC_TIME_STAMP)
     end_time = datetime.datetime.strptime(end, ESAC_TIME_STAMP)
     publisher = esac_entry["Publisher"]
+    if contract_name.startswith("Springer Compact"):
+        publisher = "Springer Compact" # SC special rule
     name_candidate = "{} ({}) {}-{}".format(publisher, mapped_consortium, start_time.year, end_time.year)
     if name_candidate == contract_name:
         print("name " + contract_name + " is already correct for esac_id " + esac_id)
