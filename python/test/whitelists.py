@@ -636,6 +636,8 @@ JOURNAL_OWNER_CHANGED = {
 	"1641-876X": ["Walter de Gruyter GmbH", "University of Zielona Góra, Poland"], # International Journal of Applied Mathematics and Computer Science 
 	"2083-8492": ["Walter de Gruyter GmbH", "University of Zielona Góra, Poland"], # International Journal of Applied Mathematics and Computer Science (electronic)
 	"0079-2993": ["Walter de Gruyter GmbH", "Polish Academy of Sciences Chancellery"], # Polish Psychological Bulletin 
+	"0214-6282": ["UPV/EHU Press", "EHU Press"], # The International Journal of Developmental Biology 
+	"1696-3547": ["UPV/EHU Press", "EHU Press"], # The International Journal of Developmental Biology (electronic)
 
 }
 
@@ -1114,6 +1116,7 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "0886-0440", # Journal of Cardiac Surgery, Gold OA since 2023
     "1574-0196", # European Constitutional Law Review, Gold OA since 2025
     "2057-0198", # Business and Human Rights Journal, Gold OA since 9.2024
+    "0214-6282", # The International Journal of Developmental Biology,
 ]
 
 # A whitelist to identify contract group_ids where similar cost amounts
