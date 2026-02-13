@@ -35,14 +35,18 @@ Academic institutions and research funders globally are invited to contribute da
 require(dplyr)
 require(ezsummary)
 my_apc <- readr::read_csv("transformative_agreements.csv")
+my_contracts <- readr::read_csv("contracts.csv")
+my_apc <- my_apc %>%
+  left_join(my_contracts, join_by(group_id))
+  
 ```
-This dataset contains information on `r nrow(my_apc)` articles, published at `r length(unique(my_apc$institution))` institutions under `r length(unique(my_apc$agreement))` different transformative agreements. The data can also be inspected as a [treemap visualisation](https://treemaps.openapc.net/apcdata/transformative-agreements/).
+This dataset contains information on `r nrow(my_apc)` articles, published at `r length(unique(my_apc$institution.x))` institutions under `r length(unique(my_apc$contract_name))` different transformative agreements. The data can also be inspected as a [treemap visualisation](https://treemaps.openapc.net/apcdata/ta-euro/).
 
 ### Breakdown by agreement
 
 ```{r}
-my_apc %>% select(agreement, euro) %>% 
-    group_by(agreement) %>% 
+my_apc %>% select(contract_name, euro.x) %>% 
+    group_by(contract_name) %>% 
     summarise(count = n()) %>% 
     arrange(desc(count)) %>%
     knitr::kable(col.names = c("Agreement", "Articles"), align = c("l","r"))
@@ -51,8 +55,8 @@ my_apc %>% select(agreement, euro) %>%
 ### Breakdown by institution
 
 ```{r}
-my_apc %>% select(institution, euro) %>% 
-    group_by(institution) %>% 
+my_apc %>% select(institution.x, euro.x) %>% 
+    group_by(institution.x) %>% 
     summarise(count = n()) %>% 
     arrange(desc(count)) %>%
     knitr::kable(col.names = c("Institution", "Articles"), align = c("l","r"))
