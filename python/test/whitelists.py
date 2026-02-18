@@ -1116,7 +1116,8 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "0886-0440", # Journal of Cardiac Surgery, Gold OA since 2023
     "1574-0196", # European Constitutional Law Review, Gold OA since 2025
     "2057-0198", # Business and Human Rights Journal, Gold OA since 9.2024
-    "0214-6282", # The International Journal of Developmental Biology,
+    "0214-6282", # The International Journal of Developmental Biology
+    "1049-8001", # International Journal of Wildland Fire, Gold OA since 2024
 ]
 
 # A whitelist to identify contract group_ids where similar cost amounts
