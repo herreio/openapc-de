@@ -121,10 +121,10 @@ This dataset contains information on 181,798 articles, published at 557 institut
 |IEEE (CRUI-CARE) 2022-2024                                |      151|
 |Royal Society of Chemistry (CSIC) 2023-2025               |      150|
 |Royal Society of Chemistry (CSAL) 2024-2026               |      143|
-|FinELib Emerald agreement                                 |      140|
+|Emerald (FinELib) 2024                                    |      140|
 |Royal Society of Chemistry (FinELib) 2024-2025            |      134|
 |Royal Society of Chemistry (CSAL) 2019-2020               |      133|
-|Swiss Consortium IEEE agreement                           |      131|
+|IEEE (CSAL) 2021-2024                                     |      131|
 |Royal Society of Chemistry (KEMOE) 2017-2018              |      127|
 |IOP Publishing (KEMOE/FWF) 2020-2022                      |      126|
 |Karger (CSAL) 2020-2022                                   |      118|
@@ -143,7 +143,7 @@ This dataset contains information on 181,798 articles, published at 557 institut
 |Taylor & Francis (CzechELib) 2023-2025                    |       85|
 |Cambridge University Press (CRUI-CARE) 2020-2022          |       83|
 |Royal Society of Chemistry (CRUI-CARE) 2022-2024          |       82|
-|FinELib Wolters Kluwer Lippincott agreement               |       81|
+|Wolters Kluwer Health (FinELib) 2018-2022                 |       81|
 |Royal Society of Chemistry (IReL) 2025-2028               |       79|
 |Springer Nature (EISZ) 2020-2022                          |       79|
 |IReL RIA Agreement                                        |       76|
