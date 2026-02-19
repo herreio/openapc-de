@@ -1149,8 +1149,6 @@ Metadata representing publication titles or publisher names is obtained from Cro
 |DOI                        |  99.76%       |88.6%   |
 |PubMed ID                  |  72.6%      | NA                                                          |
 |PubMed Central ID          |  66.77%     | NA                                                          |
-|Web of Science record ID   | 64.37%         | NA                                                          |
-
 
 
 
