@@ -1120,6 +1120,7 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "1049-8001", # International Journal of Wildland Fire, Gold OA since 2024
     "1462-5814", # Cellular Microbiology, Gold OA since 2022
     "1882-0778", # Applied Physics Express, Gold OA since 2024
+    "0300-5526", # Intervirology, Gold OA since 2021
 ]
 
 # A whitelist to identify contract group_ids where similar cost amounts
