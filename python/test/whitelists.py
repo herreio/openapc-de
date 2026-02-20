@@ -1118,6 +1118,8 @@ JOURNAL_HYBRID_STATUS_CHANGED = [
     "2057-0198", # Business and Human Rights Journal, Gold OA since 9.2024
     "0214-6282", # The International Journal of Developmental Biology
     "1049-8001", # International Journal of Wildland Fire, Gold OA since 2024
+    "1462-5814", # Cellular Microbiology, Gold OA since 2022
+    "1882-0778", # Applied Physics Express, Gold OA since 2024
 ]
 
 # A whitelist to identify contract group_ids where similar cost amounts
