@@ -16,7 +16,7 @@ At the moment OpenAPC provides the following cost data:
 
 | Entity                      | Count                                     | Aggregated Sum (€)               | Contributing Institutions                                         |
 |-----------------------------|-------------------------------------------|----------------------------------|-------------------------------------------------------------------|
-| Articles (APCs)             |266,668                  | 548,190,472    | 483                   |
+| Articles (APCs)             |266,669                  | 548,192,939    | 480                   |
 | Monographs (BPCs)           |2,379                           | 15,710,216             | 105                            |
 | OA Agreements/Contracts     |258                 | 107,404,116   | 126                  |
 
@@ -512,7 +512,6 @@ The following institutions have contributed to OpenAPC so far:
 - CNAM - Conservatoire national des arts et métiers
 - CNRS - Centre national de la recherche scientifique
 - Centrale Nantes
-- CentraleSupélec
 - Centre Georges-François Leclerc (CGFL) - Centre régional de lutte contre le cancer du réseau UNICANCER
 - [Centre Hospitalier Universitaire d'Amiens](https://www.chu-amiens.fr/)
 - Centre Hospitalier Universitaire d'Orléans
@@ -523,7 +522,6 @@ The following institutions have contributed to OpenAPC so far:
 - ENGEES - Ecole nationale du Génie de l'Eau et de l'Environnement de Strasbourg
 - ENPC - École des Ponts ParisTech
 - ENS Lyon - Ecole normale supérieure de Lyon
-- ENS Paris - Ecole normale supérieure de Paris
 - ENSICAEN - Ecole nationale supérieure de Caen
 - ENSTA Bretagne - Ecole nationale supérieure de techniques avancées - Bretagne
 - ESPCI - Ecole supérieure de physique et de chimie industrielles
@@ -586,7 +584,6 @@ The following institutions have contributed to OpenAPC so far:
 - Université Savoie Mont Blanc
 - Université Sorbonne Nouvelle - Paris III - USN
 - Université Toulouse - Jean Jaurès
-- Université Toulouse III
 - Université Vincennes-Saint Denis - Paris VIII
 - Université d'Angers
 - Université d'Evry-Val-d'Essonne
@@ -1002,11 +999,11 @@ The following institutions have contributed to OpenAPC so far:
 
 
 
-The APC data set contains information on 248,466 Open Access journal articles for which publication fees were paid on an article basis. These articles were published in fully Open Access and hybrid journals, and the corresponding fees were supported financially by 483 research-performing institutions and research funders.
+The APC data set contains information on 248,467 Open Access journal articles for which publication fees were paid on an article basis. These articles were published in fully Open Access and hybrid journals, and the corresponding fees were supported financially by 480 research-performing institutions and research funders.
 
-In total, article publication fee spending covered by the OpenAPC initiative amounted to € 507,930,539. The average payment was € 2,044 and the median was € 1,891.
+In total, article publication fee spending covered by the OpenAPC initiative amounted to € 507,933,006. The average payment was € 2,044 and the median was € 1,891.
 
-182,109 articles in the data set were published in fully open access journals. Total spending on publication fees for these articles amounts to € 337,088,469, including value-added tax; the average payment was € 1,851 (median =  € 1,721, SD = € 899).
+182,110 articles in the data set were published in fully open access journals. Total spending on publication fees for these articles amounts to € 337,090,936, including value-added tax; the average payment was € 1,851 (median =  € 1,721, SD = € 899).
 
 Hybrid open access journals rely on both publication fees and subscriptions as revenue source. 66,357 articles in the data set were published in hybrid journals. Total expenditure amounts to 170,842,070 €; the average fee was € 2,575 (median =  € 2,513, SD = € 1,153).
 
@@ -1041,9 +1038,9 @@ Articles published under OA publishing agreements, including cases where APCs ar
 |2019   |      17,533|   1,707|     1,636|    10.7 -  7,684|           7,121|       2,535|         2,498|    75.3 -  9,500|
 |2020   |      19,712|   1,706|     1,668|     0.2 -  8,906|           4,573|       2,497|         2,534|    16.6 -  7,416|
 |2021   |      23,291|   1,792|     1,754|    27.0 -  8,341|           3,621|       2,561|         2,513|    30.2 - 11,400|
-|2022   |      26,274|   2,071|     1,991|    12.4 - 11,175|           3,146|       2,903|         2,730|     2.1 - 14,607|
-|2023   |      22,703|   2,278|     2,207|    35.0 -  9,893|           3,491|       3,010|         2,817|   106.4 - 11,895|
-|2024   |      10,979|   2,465|     2,361|    40.0 - 10,030|           1,933|       3,246|         3,010|    28.4 - 13,044|
+|2022   |      26,273|   2,071|     1,991|    12.4 - 11,175|           3,146|       2,903|         2,730|     2.1 - 14,607|
+|2023   |      22,703|   2,278|     2,207|    35.0 -  9,893|           3,490|       3,010|         2,817|   106.4 - 11,895|
+|2024   |      10,981|   2,465|     2,361|    40.0 - 10,030|           1,934|       3,246|         3,010|    28.4 - 13,044|
 |2025   |         929|   2,365|     2,405|   100.0 -  8,854|             106|       3,178|         3,301|   200.0 -  8,095|
 |2026   |           2|   2,094|     2,094| 1,519.6 -  2,667|              NA|          NA|            NA|               NA|
 
